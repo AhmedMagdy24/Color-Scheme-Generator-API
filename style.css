@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    grid-gap: 3rem;
+    padding: 1rem;
+}
+
+input[type='color']#chooseColor{
+    padding: .02rem .05rem;
+    align-self: center;
+}
+
+button, input[type='text'], select{
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: .3rem .5rem;
+}
+
+button{
+    font-size: .8rem
+}
+
+button:hover{
+    background: rgb(161, 161, 161);
+
+}
+
+select, option{
+    font-family: Inter;
+    font-weight: 400;
+}
+
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  font-weight: 600;
+}
+
+#displayScheme{
+    display:flex;
+    min-height: 50vh;
+    box-shadow: inner 0px 4px 11px rgba(0, 0, 0, 0.15);
+    flex-grow: 1;
+}
+
+.swatch{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.chip{
+    flex-grow: 1;
+}
+
+.label{
+    flex-shrink: 1;
+    padding: .5rem 0;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
